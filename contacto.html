@@ -21,13 +21,72 @@
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div><!--Barra-->
-            <h1>Ventas de Casas y Departamento Exclusivo de Lujo</h1>
-
         </div>
     </header>
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="Destacada">
+        </picture>
+
+        <h2>Llene el formulario de contacto</h2>
+
+        <form class="formulario" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="txt_nombre">Nombre</label>
+                <input type="text" name="txt_nombre" id="txt_nombre" placeholder="Tu nombre">
+
+                <label for="txt_email">E-mail</label>
+                <input type="email" name="txt_email" id="txt_email" placeholder="Tu nombre">
+
+                <label for="txt_tel">Telefono:</label>
+                <input type="tel" name="txt_tel" id="txt_tel" placeholder="Tu nombre">
+
+                <label for="txt_mensaje">Mensaje:</label>
+                <textarea name="" id="txt_mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información Propiedad</legend>
+                <label for="txt_opciones">Vende o Compra</label>
+                <select type="text" name="txt_opciones" id="txt_opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Vende</option>
+                </select>
+
+                <label for="txt_presupuesto">Presupuesto:</label>
+                <input type="number" name="txt_presupuesto" id="txt_presupuesto" placeholder="Tu presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="txt_opciones">Como desea ser contactado</label>
+
+                <div class="forma-contacto">
+                    <label for="txt_contacto">Telefóno: </label>
+                    <input type="radio" name="txt_contacto" id="txt_contacto" value="telefono">
+
+                    <label for="txt_contacto_email">E-mail: </label>
+                    <input type="radio" name="txt_contacto" id="txt_contacto_email" value="email">
+                </div>
+
+                <p>Si eligio telefono, eliga la fecha y hora para ser contactado: </p>
+
+                <label for="txt_fecha">Telefono:</label>
+                <input type="date" name="txt_fecha" id="txt_fecha">
+
+                <label for="txt_hora">Hora:</label>
+                <input type="time" name="txt_hora" id="txt_hora" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton-verde">
+        </form>
     </main>
 
     <footer class="footer seccion">

@@ -1,0 +1,50 @@
+@include tablet{
+    .seccion-inferior{
+        @include grid2(2fr,1fr,2rem);
+    }
+}
+
+.entrada-blog{
+    margin-bottom:2rem;
+    
+    @include tablet{
+        @include grid2(1fr,2fr,2rem);
+    }
+
+    &:last-of-type{
+        margin-bottom:0;
+    }
+}
+
+.informacion-meta{
+    span{
+        color: $amarillo;
+        font-weight: $bold;
+    }
+}
+
+.texto-entrada{
+    a{
+        color: $negro;
+        display: block;
+        margin-top: 2rem;
+
+        @include tablet{
+            margin: 0;
+        }
+    }
+
+    h4{
+        margin: 0;
+        line-height:1.4;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-top: 1rem;
+        }
+    }
+}
